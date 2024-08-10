@@ -1,0 +1,217 @@
+<body>
+    <!--
+    Colors
+    -color names
+    -they are pre-define color names for web.
+    -standard color names.
+
+
+    RGB Values
+    -three lights Source - RGB,GREEN,BLUE.
+    -the value for each color shows the intensity.
+    Ranges from 0 to 225 value for each color.
+    -total colors available:
+    256* 256 * 256 =16777216 possible colors
+
+    -RGBA values
+    -similar to RGB with an Alpha value
+    -alpha value helps in bring the transparncy in the color.
+    -alpha value is ranged in between of 0.0 to 1.0
+    -where 1.0 is stated to be solid color.
+    -where 0.0 is stated to be a transparent color.
+
+     -HEX values
+    -very much similar to RGB value having the same concept of light source.
+    -it uses Hexa decimal values for representation.
+    -Synatax
+    #
+->   defining the hexa valies for representation.
+     values will be for RED GREEN BLUE colors.
+    each color will be shown a pair of digits.
+
+
+      Red           ->00
+      Green          ->00
+      Blue            ->00
+
+      #000000  ->Black
+      #ffffff   ->White
+
+
+
+
+HSL values    (hslpicker.com)
+      -Stated for HUE,SATURATION,LIGHTNESS
+      -HUE          ->represents the color shades in a range of values from 0 to 
+      Saturation     ->represents a particular color shade ,ranges from 0 to 100 in
+       Lightness    ->reprsents the color to be light or dark,ranges from 0 to 1
+
+
+-HSLA values
+-similar to HSL with an alpha value
+-alpha value helps in bring the tranparency in the color.
+-alpha value is ranged in between of 0.0 to 1.0
+-where 1.0 is stated to be solid color.
+-where 1.0 is stated to be a transparnacy color.
+where 1.0 is stated to be solid color.
+where 0.0 is stated to be a transparrnt color.
+-->
+
+<p style="color:orange"> This is an RED by color Name.</p>
+<p style="color: rgb(200, 0, 0);">This  is an RED by RGB value. </p>
+<p style="color: rgba(255,0,0,0.5);"> This is an RED by RGBA value.</p>
+<p style="color:#65996c;">This is an RED by HEX value.</p>
+<p style="color:hsl(320,81%,51%);">This is an RED by HSL value.</p>
+<p style="color:hsla(360,70%,47%,0.5);">This is an RED by HSLA value.</p>
+<hr>
+<!--
+-A div tag is container which can store multiple element.
+-also know as division tag.
+-supports nesting in html.
+-it is generic block level element.
+-it takes the whole row of the page.
+-it allow next new tags to sit on the row only.
+-it accepts width and height customization.
+-->
+
+<div style="background-color:darkorange;">Block-1</div>
+<div style="background-color:rgb(46,29,176);">Block-2</div>
+<div style="background-color:rgb(184,219,28);">Block-3</div>
+
+<!--
+-A span tag is a container which can store only text values.
+-Done not supports nesting in html.
+-it is a genric Inline element.
+-it takes the neccessary content part only.
+-it allow a new next tags to sit next to it,if space is available.
+-cannot customize the width and height of the element.
+ -->
+
+
+ <span style="background-color:lightseagreen;">Block-01</span>
+ <span style="background-color:rgb(117,178,32);">Block-02</span>
+ <span style="background-color:rgb(181,130,35);">Block-03</span>
+ </body>
+
+ <style>
+  table,tr,td,th {
+
+    border:2px solid blue;
+    text-align: center;
+    border-collapse:collapse;
+  }
+
+  </style>
+  </head>
+  <body>
+    <!-- Tables -->
+     <h3>tables</h3>
+     <table style="width: 50%"><!-- start of a table-->
+      <!-- table body -->
+       <th> <!-- table heading -->
+        countries
+        </th>
+        <th>
+          states
+          </th>
+          <th>
+          population
+          </th>
+        </tr>
+        <!-- Table head -->
+         <tr>
+          <td> <!-- table data-->
+            India
+            </td>
+            <td>
+              maharashtra
+              </td>
+              <td>
+                25.020
+                </td>
+
+                </tr>
+                <tr>
+                  <td>  <!-- table data-->
+                    Australia
+                    </td>
+                    <td>
+                      Sydney
+                      </td>
+                      <td>
+                        18,500
+                        </td>
+                        </tr>
+                        <!-- table foot-->
+                         <tr>
+                          <td>
+                            2
+                            </td>
+                            <td>
+                              2
+                              </td>
+                              <td>
+                                2
+                                </td>
+                              </tr>
+                                </table> <!-- end of a table -->
+                                
+                                
+                                <!-- 
+                                Merging of cells :
+                                -Rows
+                                -Rowspan  -> Merging number of row's cell
+                                
+                                
+                                -Columns
+                                -Colspan  -> Merging number of column's cells
+                                -->
+
+                                <h4>Rowspan Example</h4>
+                                <table style="width:50%;">
+                                  <tbody>
+                                    
+                                    <tr>
+                                  <td>Value </td>
+                                <td>Value</td>
+                                <td rowspan="2">Value</td><!-- merges the 2row's cell-->
+                                </tr>
+                               
+                                <tr>
+                                  <td>Value</td>
+                                  <td>Value</td>
+                                  </tr>
+                                  
+                                  
+                                  <tr>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    </tr>
+                                     
+                                    <tr>
+                                  </tr>
+                            </tbody>
+                          </table>
+                         
+                          <hr>
+                          <h4>Colspan Example</h4>
+                          <table style="width:50%;">
+                            <tbody>
+                              
+                              <tr>
+                                <td>Value</td>
+                                <td>Value</td>
+                                <td>Value</td>
+                                </tr>
+                                
+                                <tr>
+                                  <td>Value</td>
+                                  <td>Value</td>
+                                  <td>Value</td>
+                                  </tr>
+
+                                  <td colspan="3">value</td><!--merging 2 collum's cell-->
+                                  </tr>
+                                  </tbody>
+                                  </table>
+                                  <hr>
